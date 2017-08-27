@@ -3,23 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pink mobile</title>
+	<script src="js/script.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<div class="page-header__logo-wrap">
 			<a href="/" class="page-header__logo-link">
-			 <img src="img/logo.svg" alt="Pink logo">
+			 <img src="img/logotype-white-tablet.png" alt="Pink logo">
+			</a>
+			<a href="" class="main-nav__toggle">
 			</a>
 		</div>
 		<div class="page-header__nav-wrap">
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+					<li class="main-nav__items main-nav__item--active"><a href="#">Главная</a></li>
 					<li class="main-nav__items"><a href="#">Фотографии</a></li>
 					<li class="main-nav__items"><a href="#">Конкурс</a></li>
 					<li class="main-nav__items"><a href="#">HTML ACADEMY</a></li>
 				</ul>
-			<a href=" "  class="main-nav__toggle main-nav__toggle--close"></a>
+			<a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
 			</nav>
 		</div>
 	 </header>
@@ -29,43 +33,61 @@
 					<img src="img/logo.jpg" alt="Pink application">
 				</div>
 				<div class="promo-download__smartphone-applications">
-					<h2 class="promo-download__title">Взгляните на жизнь иначе!</h2>
+					<h2 class="promo-download__title">Взгляните <span>на жизнь</span> <span>иначе!</span></h2>
 					<div class="promo-download__button">
 						<a href="#">Скачать приложение</a>
 					</div>
 					<div class="promo-download__links">
 					<ul class="os-nav">
-						<li><a class="os-nav__item-apple os-nav__item--active" href="">Apple</a></li>
-						<li><a class="os-nav__item-android" href="">Android</a></li>
-						<li><a class="os-nav__item-windows" href="">Windows</a></li>
+						<li><svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47 56" width="47" height="56" id="apple-logo" y="647">
+							<symbol viewBox="0 0 47 56" id="apple-logo"><image width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAQAAADH/WkEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBIQBgyYZv6PAAABzElEQVRYw+2Y0XGDMBBEV0wKUCqISqCDkA4ogRLoIO6ASQW4A5wKIBXEHZBUAKlg82GbCCEwA6e/7A+jGfF06FYHB7BLzFiRJJN9HD+6402yeGrWtKUl4bEVN0l2spG3HKuUxFd0lcrB0wm8lYz9c4JP5ODxBF5Ixn4ImFTAcbssfIRv1/jlYcMaPRq8q+OaqWomSgODBECPM86qn52VwOAJwDeARjX3H9+wmJzKitm4qtAw91iUrBZsSs2Cc+pYMgVohiI8p5qxDx5Pot6qjpkLz5wquFfZOHJ5JUB02XPUGwy6rB43v91J1RZ9Dk5jEhAeIPbWhmvx2K2DFSEVTunRLg0RnoXxb/YgQiwK/1LnkPjTeBiJwoGfsHhH/3hbjs0VKbzAo/1mjtAI41N7EA1VWUqvY/yHMN7wYI0CVHvnPduFWyACxJMLAOWwRcwCRE+SLTMFUKOFDvAEl81RvVtGxXRSAEADyfbrTy/Xq9N1CO39sEx495fC8PFnJY3w8UqcPDAXhPu6XbEEt94fMNRCGxTPGFWkjcgXTsLuCnSvU19coGO92OCt+Q3gaeOubad1DAtPng4riwUNy+H2mrnPCdRWh9uxpJnO+QUQmtCfFd3cQgAAAABJRU5ErkJggg=="/></symbol>
+						</svg>
+						</li>
+						<li>
+							<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 43 47" width="43" height="47" id="android-logo" y="600">
+								<symbol viewBox="0 0 43 47" id="android-logo"><image width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAMAAABNEsPkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAACkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjmkxjkAAACTXjzEAAAAEHRSTlMAIN9An4AQYK/vj3DPv1AwJxVnQAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBIQBzs5wGrBAAAA80lEQVRIx+3V0RaCIAwG4AFjOAz0/Z82BoqdgDjHbv0v0sGXEgoBHFEa6qkxRtVKX6c1aOWT3MK7hBdH0mCxpUDpAuQLLGGkdDvqWFiX9VNmndqgm2+ZdZ966UOs7GXly75HjfSH9BtPSxDlYDpWS4cm0qeNYHNTS+M+Smynd2jbCQ5DGxq7jwP/xIxzbwzKrmpq1WoTcvLQ48RGedquvDB6YnV5jc7ypz2Oj33sXZvXr5/YvH0FIGT203XhtWywd/aHjQeUt3bRb1i0DiVlD2Ts0DoMe1R2MIDHfgY7Fge2/L2cc7/lKg6sXIpdrRxfN8l5A2ocSPHUn5T/AAAAAElFTkSuQmCC"/></symbol>
+							</svg>
+						</li>
+						<li>
+							<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 41" width="44" height="41" id="microsoft-logo" y="2025"><symbol viewBox="0 0 44 41" id="microsoft-logo"><image width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApBAMAAAC8Z9aBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAADwVCOExEEtq+L5vBXwVCOExEEtq+L5vBUAAABYuXXrAAAABXRSTlMAgICAgBg8sGEAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QgSEAgro+9magAAADNJREFUKM9jCIWDALY0OGAYFR7MwoJwIMCkBAcMOIAxHBiwuMABQzkcFHB0wMGo8GAWBgAFa15Qj2tiHgAAAABJRU5ErkJggg=="/></symbol></svg>
+						</li>
 					</ul>
-					Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+					<h2 class="os-nav__title">Доступно для iPhone, iPad, Android, 
+					<span>Windows Phone, OS X, Windows 8</span></h2>
 				</div>
 				</div>	
 			</section>
 			<div class="features">
-				<div class="features__title">Устали от серости мегаполиса?Нам есть, что вам предложить</div>
-				<div class="features__image-wrap"></div>
+				<div class="features__title">Устали от серости мегаполиса?<br><span>Нам есть, что вам</span><br><span>предложить!</span></div>
+				<div class="features__image-wrap">
+				</div>
 				<div class="features-items">
 				<section class="features-items__block">
-					<h2 class="features-items__title">Поднимает</h2>
-					<p class="features-items__descr">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+					<h2 class="features-items__title">Поднимает настроение</h2>
+					<p class="features-items__descr">Приложение позволит вам победить<br> осеннюю хандру и деперессию буквально в несколько кликов!</p>
 				</section> 
 				<section class="features-items__block"> 
 					<h2 class="features-items__title">Меняем мир вокруг</h2>
-					<p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					<p class="features-items__descr">Сделайте снимок и украсьте его смайликом<br>или текстовой подписью, чтобы<br>усилить эффект</p>
 				</section>
 				<section class="features-items__block">
 					<h2 class="features-items__title">Заводит новых друзей</h2>
-					<p class="features-items__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					<p class="features-items__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
 				</section>
 			</div>
 			</div>
-			<section class="features-profit">
-				<div class="features-profit__image-wrap"></div>
-				<h2 class="features-profit__title">Эффект на 24 часа!</h2>
-				<p class="features-profit__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!<span class="features-profit__href"><a href="#">Узнать больше об исследовании</a></span></p>
+			<section class="features-block">
+				<div class="features-block__image-wrap">
+					<svg style="display: none;">
+					<symbol viewBox="0 0 240 277" id="diagram-fill"><image width="240" height="277" xlink:href="data:img/png;base64,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"/></symbol>
+					</svg>
+					</div>
+				<div class="features-profit">
+				<h2 class="features-profit__title">Эффект<br>на 24 часа!</h2>
+				<p class="features-profit__descr">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения<br>длится целые сутки!<br><a href="#">Узнать больше об исследовании</a></p>
 			</section>
+			</div>
+
 			<section class="reviews">
 				<article class="slider-reviews">
 				<div class="slider-reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>

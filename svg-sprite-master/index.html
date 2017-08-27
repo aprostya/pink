@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG-sprite Demo</title>
+  <style>
+    body {margin: 0;}
+    .container {padding: 20px;max-width: 980px;margin: auto;}
+    svg{transition: all .3s;}
+    svg[width="16"]{fill:#E84545;}
+    svg[width="24"]{fill:#2B2E4A;}
+    svg[width="32"]{fill:#903749;}
+    svg[width="48"]{fill:#FFA930;}
+    svg:hover{fill:black;}
+    svg.test{fill:red;}
+    svg.test:hover{fill:yellow;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>SVG-sprite Demo</h1>
+    <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use></svg>
+    <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use></svg>
+    <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use></svg>
+    <svg class="test" width="48" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use></svg>
+    <hr>
+    <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+    <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+    <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+    <svg width="48" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+    <hr>
+    <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype"></use></svg>
+    <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype"></use></svg>
+    <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype"></use></svg>
+    <svg width="48" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skype"></use></svg>
+    <hr>
+    <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+    <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+    <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+    <svg width="48" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+    <hr>
+    <div class="folder">
+      <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#folder-open"></use></svg>
+      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#folder-open"></use></svg>
+      <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#folder-open"></use></svg>
+      <svg width="48" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#folder-open"></use></svg>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>
